@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import java.math.BigDecimal;
 
-public class SalaryCalculatorParameterizedTest {
+public class SalaryCalculatorParameterizedValueSourceTest {
     private SalaryCalculator calculator;
 
     @BeforeEach
