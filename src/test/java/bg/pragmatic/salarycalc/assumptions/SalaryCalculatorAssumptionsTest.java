@@ -45,7 +45,9 @@ public class SalaryCalculatorAssumptionsTest {
         BigDecimal calculatedSalary = calculator.calculateSalary(ivan);
 
         //executes the assertion ONLY if the assumption is TRUE
-        assumingThat(SystemUtils.IS_OS_LINUX, () -> { assertEquals(BigDecimal.valueOf(400), calculatedSalary, "The salary was not correct"); });
+        assumingThat(SystemUtils.IS_OS_LINUX, () -> {
+            assertEquals(BigDecimal.valueOf(400), calculatedSalary, "The salary was not correct");
+        });
 
         assertEquals("Ivan", ivan.getName());
         assertEquals(20, ivan.getAge());
